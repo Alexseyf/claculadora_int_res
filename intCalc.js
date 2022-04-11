@@ -8,6 +8,6 @@ function dividir() {
 
   quociente = Math.floor(dividend / divider);
   resto = dividend % divider;
-  result.innerHTML = `Quociente = ${quociente} » Resto = ${resto}`;
+  result.innerHTML = `Inteiro = ${quociente} » Resto = ${resto}`;
   document.getElementById("dividend").value = quociente;
 }
