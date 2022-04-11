@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>IntCalc</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="calc">
-    <h1>Calcular Inteiro e Resto</h1>
-    <div class="input">  
-      <input type="number" name="div1" id="divr">
-      <input type="number" name="div2" id="div">
+  <head>
+    <meta charset="UTF-8" />
+    <title>IntCalc</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        <input
+          type="text"
+          id="dividend"
+          class="number-input"
+          placeholder="Dividendo"
+        />
+        <input
+          type="text"
+          id="divider"
+          class="number-input"
+          placeholder="Divisor"
+        />
+        <button class="divide-number-button" onclick="dividir()">Dividir</button>
+      </div>
+      <div class="results-container">
+        <div id="result""></div>
+      </div>
     </div>
-      <input class="btn" type="button" value="Calcular" onclick="dividir()">
-    <div id="res"></div>
-</div>
-</body>
-<script src="intCalc.js"></script>
+  </body>
+  <script src="intCalc.js"></script>
 </html>
